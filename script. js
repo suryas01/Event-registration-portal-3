@@ -1,0 +1,19 @@
+document.getElementById("registrationForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let event = document.getElementById("event").value;
+
+    document.getElementById("result").innerHTML =
+        "<h3>Registration Successful!</h3>" +
+        "<p>Name: " + name + "</p>" +
+        "<p>Email: " + email + "</p>" +
+        "<p>Phone: " + phone + "</p>" +
+        "<p>Event: " + event + "</p>";
+
+    document.getElementById("registrationForm").reset();
+
+});
